@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  align-items: center;
+  background-color: rgb(128, 163, 240);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+}
+.btn-save,
+.btn-gallery,
+a {
+  background-color: #4c53af;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: lightseagreen;
+  border-radius: 15px;
+}
+
+.edit-meme {
+  display: flex;
+  flex-direction: column;
+  background-color: #4caf50;
+  gap: 15px;
+}
+
+canvas {
+  border: 2px solid rgb(80, 76, 201);
+  border-radius: 15px;
+}
+
+.fill-color {
+  width: 40px;
+  border-radius: 10px;
+  background-color: #4c53af;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+.gallery img {
+  width: auto;
+  height: 150px;
+  justify-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: none;
+}
+
+.font-btn {
+  width: 65px;
+  height: 35px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #525155;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
